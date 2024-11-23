@@ -29,7 +29,9 @@ const ToDoItem = ({
               handleCompletedChange();
             }}
           />
-          <label htmlFor="check" className="taskName">{item}</label>
+          <label htmlFor="check" className="taskName">
+            {item}
+          </label>
         </div>
         <div>
           <p>Priority: {priority}</p>
@@ -50,6 +52,7 @@ const ToDoList = ({ children, projectName }: ToDoListProps) => {
   return (
     <div>
       <h2>Project: {projectName}</h2>
+      <button className="addTaskButton">Add task</button>
       <ul className="toDoList">
         <hr className="toDoDivider" />
         {React.Children.map(children, (child, index) => (

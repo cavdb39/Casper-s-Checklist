@@ -52,6 +52,17 @@ html {
   font-weight: bold;
 }
 
+.addTaskButton {
+  background-color: #eee;
+  padding: 0.5rem 1rem;
+  border: none;
+  transition: ease 0.2s background-color;
+
+  &:hover {
+    background-color: #ddd;
+  }
+}
+
 .completed {
   color: lightgray;
 
